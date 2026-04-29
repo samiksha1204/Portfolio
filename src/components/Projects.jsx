@@ -16,7 +16,7 @@ export default function Projects() {
     <section id="projects" className="py-24 px-6 border-t border-slate-800">
       <div className="max-w-5xl mx-auto">
         <motion.h2 {...fadeUp} className="text-3xl font-bold text-white mb-10">
-          What I've Built
+          Projects
         </motion.h2>
         <div className="space-y-8">
           {profile.projects.map((project, index) => (
@@ -31,7 +31,7 @@ export default function Projects() {
               <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                 <div>
                   {project.featured && (
-                    <p className="text-violet-400 text-sm font-mono mb-1">
+                    <p className="text-sky-400 text-sm font-mono mb-1">
                       Featured Project
                     </p>
                   )}
@@ -79,7 +79,7 @@ export default function Projects() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1 bg-slate-900 text-violet-400 rounded-full border border-slate-800"
+                    className="text-xs px-3 py-1 bg-slate-900 text-sky-400 rounded-full border border-slate-800"
                   >
                     {tag}
                   </span>

@@ -1,6 +1,3 @@
-// Navbar.jsx — Fixed top nav with mobile menu and resume button.
-// Reads: profile.social.github. Resume button auto-shows when /public/resume.pdf exists.
-
 import { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import profile from "../data/profile";
@@ -19,55 +16,51 @@ export default function Navbar() {
       })
       .catch(() => setResumeAvailable(false));
   }, []);
-  const links = [
-    "About",
-    "Experience",
-    "Projects",
-    "Skills",
-    "Blog",
-    "Contact",
-  ];
+
+  const links = ["About", "Experience", "Projects", "Skills", "Contact"];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-sm border-b border-slate-800">
+    <nav className="fixed top-0 w-full z-50 bg-[#020c1b]/80 backdrop-blur-sm border-b border-slate-800">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" className="text-white font-bold text-xl tracking-tight">
-          {profile.logoText}
-          <span className="text-violet-400">.</span>
+        {/* Logo */}
+        <a href="/" className="font-mono font-bold text-lg tracking-widest text-sky-400">
+          {profile.logoText}<span className="text-white">.</span>
         </a>
-        <ul className="hidden md:flex items-center gap-8">
+
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-6">
           {links.map((link) => (
-            <li key={link}>
-              <a
-                href={`#${link.toLowerCase()}`}
-                className="text-slate-400 hover:text-white text-sm transition-colors duration-200"
-              >
-                {link}
-              </a>
-            </li>
+            <a
+              key={link}
+              href={`#${link.toLowerCase()}`}
+              className="text-slate-400 hover:text-sky-400 text-sm font-medium transition-colors duration-200"
+            >
+              {link}
+            </a>
           ))}
-          <li>
+
+          {profile.social.github && (
             <a
               href={profile.social.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm px-4 py-2 border border-slate-600 text-slate-400 hover:border-white hover:text-white rounded transition-all duration-200"
+              className="text-slate-400 hover:text-sky-400 text-sm font-medium transition-colors duration-200"
             >
               GitHub
             </a>
-          </li>
-          {resumeAvailable && (
-            <li>
-              <a
-                href={RESUME_PATH}
-                download
-                className="text-sm px-4 py-2 border border-violet-400 text-violet-400 hover:bg-violet-400 hover:text-slate-950 rounded transition-all duration-200"
-              >
-                Resume
-              </a>
-            </li>
           )}
-        </ul>
+          {resumeAvailable && (
+            <a
+              href={RESUME_PATH}
+              download
+              className="text-slate-400 hover:text-sky-400 text-sm font-medium transition-colors duration-200"
+            >
+              Resume
+            </a>
+          )}
+        </div>
+
+        {/* Mobile hamburger */}
         <button
           className="md:hidden text-slate-400 hover:text-white"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -75,31 +68,35 @@ export default function Navbar() {
           {menuOpen ? <HiX size={24} /> : <HiMenu size={24} />}
         </button>
       </div>
+
+      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-slate-800 px-6 py-4 flex flex-col gap-4 bg-slate-950">
+        <div className="md:hidden border-t border-slate-800 px-6 py-5 flex flex-col gap-4 bg-[#020c1b]">
           {links.map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="text-slate-400 hover:text-white text-sm transition-colors duration-200"
+              className="text-slate-400 hover:text-sky-400 text-sm font-medium transition-colors duration-200"
             >
               {link}
             </a>
           ))}
-          <a
-            href={profile.social.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-slate-400 hover:text-white text-sm transition-colors duration-200"
-          >
-            GitHub
-          </a>
+          {profile.social.github && (
+            <a
+              href={profile.social.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-sky-400 text-sm font-medium transition-colors duration-200"
+            >
+              GitHub
+            </a>
+          )}
           {resumeAvailable && (
             <a
               href={RESUME_PATH}
               download
-              className="text-violet-400 hover:text-violet-300 text-sm transition-colors duration-200"
+              className="text-slate-400 hover:text-sky-400 text-sm font-medium transition-colors duration-200"
             >
               Resume
             </a>

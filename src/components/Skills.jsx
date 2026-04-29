@@ -27,7 +27,7 @@ export default function Skills() {
             {profile.certifications.map((cert) => {
               const inner = (
                 <>
-                  <div className="w-2 h-2 rounded-full bg-violet-400 mt-1.5 shrink-0" />
+                  <div className="w-2 h-2 rounded-full bg-sky-400 mt-1.5 shrink-0" />
                   <div className="flex-1">
                     <p className="text-white text-sm font-semibold">
                       {cert.name}
@@ -97,7 +97,7 @@ export default function Skills() {
                   {group.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-xs px-3 py-1 border border-violet-400/30 text-violet-400 rounded-full"
+                      className="text-xs px-3 py-1 border border-sky-400/30 text-sky-400 rounded-full"
                     >
                       {skill}
                     </span>
@@ -117,7 +117,7 @@ export default function Skills() {
             {profile.publications.map((pub) => {
               const inner = (
                 <>
-                  <div className="w-2 h-2 rounded-full bg-violet-400 mt-1.5 shrink-0" />
+                  <div className="w-2 h-2 rounded-full bg-sky-400 mt-1.5 shrink-0" />
                   <div className="flex-1">
                     <p className="text-white text-sm font-semibold leading-snug">
                       {pub.title}

@@ -29,6 +29,11 @@ export default function About() {
               <p className="text-xs font-semibold tracking-widest uppercase text-slate-500 mb-3">
                 Currently Exploring
               </p>
+              {profile.exploringNote && (
+                <p className="text-slate-400 text-sm leading-relaxed mb-4 text-justify hyphens-auto">
+                  {profile.exploringNote}
+                </p>
+              )}
               <div className="flex flex-wrap gap-2">
                 {profile.interests.map((i) => (
                   <span
@@ -51,7 +56,7 @@ export default function About() {
                 key={edu.degree}
                 className="border border-slate-800 rounded-lg p-4 flex items-start gap-3"
               >
-                <div className="w-2 h-2 rounded-full bg-violet-400 mt-1.5 shrink-0" />
+                <div className="w-2 h-2 rounded-full bg-sky-400 mt-1.5 shrink-0" />
                 <div>
                   <p className="text-white text-sm font-semibold leading-snug">
                     {edu.degree}

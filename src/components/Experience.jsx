@@ -30,7 +30,7 @@ export default function Experience() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="md:pl-8 relative"
               >
-                <div className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-violet-400 -translate-x-0.5 hidden md:block" />
+                <div className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-sky-400 -translate-x-0.5 hidden md:block" />
                 <div className="border border-slate-800 rounded-lg p-6 hover:border-slate-600 transition-colors duration-200">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                     <div>
@@ -44,7 +44,7 @@ export default function Experience() {
                           </span>
                         )}
                         {job.current && (
-                          <span className="text-xs px-2 py-0.5 bg-violet-400/10 text-violet-400 rounded-full">
+                          <span className="text-xs px-2 py-0.5 bg-sky-400/10 text-sky-400 rounded-full">
                             Current
                           </span>
                         )}
@@ -61,7 +61,7 @@ export default function Experience() {
                     {job.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs px-3 py-1 bg-slate-900 text-violet-400 rounded-full border border-slate-800"
+                        className="text-xs px-3 py-1 bg-slate-900 text-sky-400 rounded-full border border-slate-800"
                       >
                         {tag}
                       </span>

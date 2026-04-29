@@ -5,7 +5,6 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import profile from "./data/profile";
@@ -22,14 +21,13 @@ function App() {
   }, []);
 
   return (
-    <main className="bg-slate-950 text-white min-h-screen">
+    <main className="bg-[#020c1b] text-white min-h-screen">
       <Navbar />
       <Hero />
       <About />
       <Experience />
       <Projects />
       <Skills />
-      <Blog />
       <Contact />
       <Footer />
     </main>
