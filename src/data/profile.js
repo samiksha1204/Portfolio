@@ -5,13 +5,13 @@ const profile = {
   logoText: "SS",
   resumeFile: "resume.pdf",
   pageTitle: "Samiksha Sharma | Portfolio",
-  metaDescription: "SAP-certified professional at Accenture working on S/4HANA transformation — specialising in E2E process design, cross-module analysis, and ABAP development.",
+  metaDescription: "SAP-certified professional working on S/4HANA transformation — specialising in E2E process design, cross-module analysis, and ABAP development.",
   tagline: "SAP developer focused on process design, ABAP, and end-to-end delivery.",
   contactBlurb: "Whether you're exploring a collaboration, an opportunity, or simply want to talk SAP and technology — I'd love to connect.",
   bio: {
-    short: "SAP-certified professional at Accenture — designing business processes by day and exploring AI by night, with hands-on experience in S/4HANA, ABAP, and LLM development.",
+    short: "SAP-certified professional — designing business processes by day and exploring AI by night, with hands-on experience in S/4HANA, ABAP, and LLM development.",
     long: [
-      "At Accenture, I work as a Packaged App Development Associate on large-scale SAP S/4HANA transformations. My work spans end-to-end business scenario design, consolidating process flows for integrated testing, and keeping things consistent across modules — work that lives right at the intersection of business thinking and technical delivery.",
+      "I work as a Packaged App Development Associate on large-scale SAP S/4HANA transformations. My work spans end-to-end business scenario design, consolidating process flows for integrated testing, and keeping things consistent across modules — work that lives right at the intersection of business thinking and technical delivery.",
       "I hold dual SAP certifications in Generative AI Development (C_AIG) and Process Management (C_SIGPM), backed by hands-on experience in ABAP development, Adobe Forms, and SAP Signavio. I take pride in translating complex business requirements into precise, well-structured technical solutions — maintaining alignment across both functional and technical dimensions throughout.",
     ],
   },
