@@ -1,6 +1,6 @@
 const profile = {
   name: "Samiksha Sharma",
-  role: "Packaged App Development Associate",
+  role: "SAP Developer & Consultant",
   photo: "/portrait.jpg",
   logoText: "SS",
   resumeFile: "resume.pdf",
@@ -9,9 +9,9 @@ const profile = {
   tagline: "SAP developer focused on process design, ABAP, and end-to-end delivery.",
   contactBlurb: "Whether you're exploring a collaboration, an opportunity, or simply want to talk SAP and technology — I'd love to connect.",
   bio: {
-    short: "SAP-certified professional — designing business processes by day and exploring AI by night, with hands-on experience in S/4HANA, ABAP, and LLM development.",
+    short: "SAP-certified professional specialising in S/4HANA process design and ABAP development, with hands-on experience in enterprise architecture and a growing focus on AI and LLM application development.",
     long: [
-      "I work as a Packaged App Development Associate on large-scale SAP S/4HANA transformations. My work spans end-to-end business scenario design, consolidating process flows for integrated testing, and keeping things consistent across modules — work that lives right at the intersection of business thinking and technical delivery.",
+      "I work on large-scale SAP S/4HANA transformations, focusing on end-to-end business scenario design, consolidating process flows for integrated testing, and maintaining consistency across modules — work that lives right at the intersection of business thinking and technical delivery.",
       "I hold dual SAP certifications in Generative AI Development (C_AIG) and Process Management (C_SIGPM), backed by hands-on experience in ABAP development, Adobe Forms, and SAP Signavio. I take pride in translating complex business requirements into precise, well-structured technical solutions — maintaining alignment across both functional and technical dimensions throughout.",
     ],
   },
@@ -98,7 +98,7 @@ const profile = {
     {
       title: "WanderVista",
       oneliner: "A travel discovery app — designed in Figma, built with Next.js and TypeScript.",
-      description: "I built WanderVista to push my frontend skills with a real, end-to-end project. It covers destination guides, curated travel packages, and personalised recommendations. I started with the design in Figma to get the layout right before writing a single line of code, then built it out with Next.js, TypeScript, and Tailwind CSS. The focus was on making it feel polished and actually enjoyable to use.",
+      description: "A full-stack travel discovery application built with Next.js and TypeScript, featuring destination guides, curated travel packages, and personalised recommendations. Designed end-to-end in Figma before development, with a strong emphasis on responsive UI and user experience using Tailwind CSS.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Figma"],
       github: null,
       live: null,
@@ -107,7 +107,7 @@ const profile = {
     {
       title: "Code Block",
       oneliner: "Write HTML, CSS, and JavaScript side by side — see the result live.",
-      description: "I built this because I wanted to understand how live preview editors work under the hood. You can write HTML, CSS, and JS in separate panes and the output updates in real time. It also lets you save the full page as an HTML file or export each file individually, switch between themes, and reset to a clean state. Works well on any screen size.",
+      description: "A browser-based code editor with live preview, supporting HTML, CSS, and JavaScript in split panes with real-time output rendering. Features include theme switching, per-file export, full-page HTML download, and a responsive layout — built entirely with React.",
       tags: ["React.js", "HTML", "CSS", "JavaScript"],
       github: null,
       live: null,
@@ -116,7 +116,7 @@ const profile = {
     {
       title: "DeliciousBites",
       oneliner: "A food delivery app with search, cart, and user login — built with React and Tailwind.",
-      description: "DeliciousBites was my way of getting comfortable with React state management and user authentication in a realistic scenario. It has a search function, an add-to-cart flow, and login/signup — the kind of features you'd find in any real app. I kept the design clean and responsive, and focused on making the interactions feel smooth rather than just getting it to work.",
+      description: "A feature-rich food delivery web app built with React and Tailwind CSS, implementing user authentication, dynamic search, and a complete add-to-cart flow. Focused on clean component architecture, state management, and a smooth, responsive user interface.",
       tags: ["React.js", "Tailwind CSS", "CSS"],
       github: null,
       live: null,
