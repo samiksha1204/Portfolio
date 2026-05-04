@@ -17,7 +17,7 @@ const profile = {
   },
   location: "India",
   social: {
-    github: "https://github.com/samiksha1204",
+    github: "https://github.com/samikshasharma-dev",
     linkedin: "https://www.linkedin.com/in/samikshasharma-dev",
     email: "ssamiksha271@gmail.com",
   },
@@ -39,13 +39,13 @@ const profile = {
     {
       name: "SAP Certified Generative AI Developer (C_AIG)",
       issuer: "SAP",
-      issued: "2024",
+      issued: "2026",
       url: "https://www.credly.com/badges/f812c3a4-b727-4708-9f8c-a48a06e3c71e/public_url",
     },
     {
       name: "SAP Certified Process Management Consultant (C_SIGPM)",
       issuer: "SAP",
-      issued: "2024",
+      issued: "2026",
       url: "https://www.credly.com/badges/4bb7be24-7ee1-49df-9bd9-637704824858/public_url",
     },
   ],
